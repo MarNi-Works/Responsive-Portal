@@ -20,10 +20,36 @@ export const StyledHeader = styled.header`
   right: 0;
   width: 100%;
   height: 4rem;
+  padding: 0 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: white;
+
+  &.header {
+    .toggle-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6E7384;
+      padding: 0.25rem;
+      background-color: transparent;
+      border-radius: 4px;
+      border: none;
+
+      &:hover {
+        color: #4A5065;
+        background-color: #EBEEF8;
+      }
+    }
+
+    .header__actions {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 0.5rem;
+    }
+  }
 `;
 
 export const StyledNav = styled.nav`
