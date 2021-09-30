@@ -3,7 +3,7 @@ import cn from 'classnames'
 import { menus } from './data'
 import { INavProps } from './types'
 import { StyledNav } from '../../styled'
-import { Button } from '../../components'
+import { Button, Input } from '../../components'
 import Profile from '../../assets/marniii.jpeg'
 import {
   HiTemplate,
@@ -11,7 +11,8 @@ import {
   HiOutlineCog,
   HiOutlineChatAlt2,
   HiOutlineUserCircle,
-  HiOutlineClipboardCheck
+  HiOutlineClipboardCheck,
+  HiOutlineSearch
 } from 'react-icons/hi'
 
 const Nav: React.FC<INavProps> = () => {
@@ -36,6 +37,18 @@ const Nav: React.FC<INavProps> = () => {
       </div>
 
       <div className='nav__menuLists'>
+
+        <div className='nav__search'>
+          <Input
+            type='text'
+            id='search'
+            icon={<HiOutlineSearch />}
+            name='search'
+            placeholder='Search...'
+            defaultValue=''
+          />
+        </div>
+
         <ul className='nav__menu'>
           {menus.map((e) => (
             <li key={e.id} className='nav__menu__list'>

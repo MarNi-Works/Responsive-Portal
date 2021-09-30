@@ -136,16 +136,21 @@ export const StyledNav = styled.nav`
 
   .nav__menuLists {
     flex: 1;
+    padding: 0.5rem;
     height: calc(100% - (7rem + 135px));
     overflow: hidden auto;
   }
 
+  .nav__search {
+    flex: 1;
+    margin-bottom: 0.5rem;
+  }
+
   .nav__menu {
+    flex: 1;
+    gap: 0.25rem;
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
-    flex: 1;
-    padding: 0.5rem;
     overflow: hidden auto;
 
     .nav__menu__list {
