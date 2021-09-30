@@ -1,90 +1,21 @@
 import React from 'react'
-import cn from 'classnames'
 import { menus } from './data'
 import { INavProps } from './types'
 import { StyledNav } from '../../styled'
-import { Button, Input } from '../../components'
-import Profile from '../../assets/marniii.jpeg'
 import {
-  HiTemplate,
-  HiOutlineChartPie,
-  HiOutlineCog,
-  HiOutlineChatAlt2,
-  HiOutlineUserCircle,
-  HiOutlineClipboardCheck,
-  HiOutlineSearch
-} from 'react-icons/hi'
+  NavActions,
+  NavHeader,
+  NavMenu,
+  NavProfile
+} from './components'
 
 const Nav: React.FC<INavProps> = () => {
   return (
     <StyledNav className='Layout__Nav nav'>
-
-      <div className='nav__header'>
-        <div className='nav__header__logo'>
-          <HiTemplate />
-        </div>
-        <p className='nav__header__name'>Portal</p>
-      </div>
-
-      <div className='nav__profile'>
-        <div className='nav__profile__img'>
-          <img src={Profile} alt='profile' />
-        </div>
-        <div className='nav__profile__details'>
-          <p>MarNi Cueva</p>
-          <p>marniencue...@gmail.com</p>
-        </div>
-      </div>
-
-      <div className='nav__menuLists'>
-
-        <div className='nav__search'>
-          <Input
-            type='text'
-            id='search'
-            icon={<HiOutlineSearch />}
-            name='search'
-            placeholder='Search...'
-            defaultValue=''
-          />
-        </div>
-
-        <ul className='nav__menu'>
-          {menus.map((e) => (
-            <li key={e.id} className='nav__menu__list'>
-              <Button
-                className={cn('nav__menu__btn', { 'selected': e.selected })}
-                icon={<HiOutlineChartPie />}
-                label={e.label}
-              />
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className='nav__actions'>
-        <Button
-          noBaseStyle
-          className='nav__action'
-          icon={<HiOutlineChatAlt2 />}
-        />
-        <Button
-          noBaseStyle
-          className='nav__action'
-          icon={<HiOutlineUserCircle />}
-        />
-        <Button
-          noBaseStyle
-          className='nav__action'
-          icon={<HiOutlineClipboardCheck />}
-        />
-        <Button
-          noBaseStyle
-          className='nav__action'
-          icon={<HiOutlineCog />}
-        />
-      </div>
-
+      <NavHeader />
+      <NavProfile />
+      <NavMenu menus={menus} />
+      <NavActions />
     </StyledNav>
   );
 };
