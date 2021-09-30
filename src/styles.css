@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #4A5065;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+
+.button {
+  cursor: pointer;
+  outline: none;
+  width: auto;
+  height: 40px;
+  padding: 0 1rem;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  color: #4A5065;
+  transition: all 0.2s ease;
+}
+
+/*
+===== COLORS =====
+
+#4A5065  =  default
+#3B4051  =  text-dark
+#E7E7EA  =  text-100
+
+#324792  =  primary-dark
+#3E59B7  =  primary-default
+#657AC5  =  primary-disabled
+#E5E9F5  =  primary-light
+#EBEEF8  =  primary-100
+
+*/
