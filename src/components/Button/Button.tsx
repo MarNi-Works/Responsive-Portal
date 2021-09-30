@@ -1,6 +1,7 @@
 import React from 'react'
 import cn from 'classnames'
 import { IButtonProps } from './types'
+import { HiOutlineDotsHorizontal } from 'react-icons/hi'
 
 const Button: React.FC<IButtonProps> = (props) => {
   const {
@@ -9,8 +10,10 @@ const Button: React.FC<IButtonProps> = (props) => {
     layout = 'solid',
     noBaseStyle,
     icon,
-    // isLoading
+    isLoading
   } = props
+
+  const loadingIcon = <HiOutlineDotsHorizontal />
 
   const baseCls = cn('', {
     [`button button__${layout}`]: !noBaseStyle
@@ -19,7 +22,7 @@ const Button: React.FC<IButtonProps> = (props) => {
 
   return (
     <button className={baseCls}>
-      {icon}
+      {isLoading ? loadingIcon : icon}
       {label}
     </button>
   )

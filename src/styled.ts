@@ -167,6 +167,9 @@ export const StyledNav = styled.nav`
       align-items: center;
       justify-content: center;
       color: #6E7384;
+      padding: 0.25rem;
+      background-color: transparent;
+      border-radius: 4px;
       border: none;
 
       &:hover {
