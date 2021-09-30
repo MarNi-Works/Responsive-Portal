@@ -10,7 +10,7 @@ export interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonEleme
   className?: string;
   icon?: IconType;
   isLoading?: boolean;
-  label: string;
+  label?: string;
   layout?: 'solid' | 'outline';
   noBaseStyle?: boolean;
 }
