@@ -8,7 +8,7 @@ const Button: React.FC<IButtonProps> = (props) => {
     label,
     layout = 'solid',
     noBaseStyle,
-    // icon,
+    icon,
     // isLoading
   } = props
 
@@ -19,6 +19,7 @@ const Button: React.FC<IButtonProps> = (props) => {
 
   return (
     <button className={baseCls}>
+      {icon}
       {label}
     </button>
   )

@@ -1,9 +1,10 @@
 import React from 'react'
 import cn from 'classnames'
+import { menus } from './data'
 import { INavProps } from './types'
 import { StyledNav } from '../../styled'
-import { menus } from './data';
 import { Button } from '../../components'
+import { HiOutlineChartPie } from 'react-icons/hi'
 
 const Nav: React.FC<INavProps> = () => {
   return (
@@ -18,6 +19,7 @@ const Nav: React.FC<INavProps> = () => {
           <li key={e.id} className='nav__menu__list'>
             <Button
               className={cn('nav__menu__btn', { 'selected': e.selected })}
+              icon={<HiOutlineChartPie />}
               label={e.label}
             />
           </li>
