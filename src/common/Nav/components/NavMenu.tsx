@@ -3,7 +3,7 @@ import cn from 'classnames'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 import { Button, Input } from '../../../components'
-import { HiOutlineChartPie, HiOutlineSearch } from 'react-icons/hi'
+import { HiOutlineSearch } from 'react-icons/hi'
 
 export interface IData {
   id: string

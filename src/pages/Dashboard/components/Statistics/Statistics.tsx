@@ -10,7 +10,7 @@ const Statistics: React.FC<IStatisticsProps> = (props) => {
   return (
     <StyledStatistics className={cn('Statistics', className)}>
       {data.map((e: any) => (
-        <div className='col-span-3'>
+        <div key={e.id} className='col-span-3'>
           <Panel key={e.id}>
             <div className='Statistics__Details'>
               <div className='Statistics__Details__Logo'>{e.icon}</div>
@@ -41,6 +41,7 @@ const StyledStatistics = styled.section`
 
     .Statistics__Details__Logo {
       svg {
+        color: #657AC5;
         font-size: 1.5rem;
       }
     }
@@ -50,6 +51,9 @@ const StyledStatistics = styled.section`
         &:first-child {
           font-size: 1rem;
           font-weight: 600;
+        }
+        &:last-child {
+          color: #6E7384;
         }
       }
     }

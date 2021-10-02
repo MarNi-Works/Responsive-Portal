@@ -6,11 +6,11 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
   color: #4A5065;
-  font-size: 14px;
   font-weight: 400;
   font-family: "Inter", sans-serif;
 }
@@ -115,7 +115,8 @@ svg {
 
 #3B4051  =  text-dark
 #4A5065  =  default
-#6E7384  =  light
+#6E7384  =  secondary
+#8B8F9D  =  light
 #E7E7EA  =  text-100
 
 #324792  =  primary-dark
