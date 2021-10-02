@@ -1,1 +1,1 @@
-export { default } from './Records'
+export { default } from './Records';

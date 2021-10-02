@@ -1,8 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Button } from '../../../components'
-import { HiOutlineCog } from 'react-icons/hi'
-import Profile from '../../../assets/marniii.jpeg'
+import React from 'react';
+import styled from 'styled-components';
+import { Button } from '../../../components';
+import { HiOutlineCog } from 'react-icons/hi';
+import Profile from '../../../assets/marniii.jpeg';
 
 const NavProfile: React.FC = () => {
   return (

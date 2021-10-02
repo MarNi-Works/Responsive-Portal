@@ -1,7 +1,7 @@
-import React from 'react'
-import cn from 'classnames'
-import styled from 'styled-components'
-import { IBreadCrumbsProps } from './types'
+import React from 'react';
+import cn from 'classnames';
+import styled from 'styled-components';
+import { IBreadCrumbsProps } from './types';
 
 const BreadCrumbs: React.FC<IBreadCrumbsProps> = (props) => {
   const { className, label } = props

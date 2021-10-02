@@ -1,1 +1,1 @@
-export { default } from './Performers'
+export { default } from './Performers';

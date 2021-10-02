@@ -1,9 +1,9 @@
-import React from 'react'
-import cn from 'classnames'
-import styled from 'styled-components'
-import { NavLink } from 'react-router-dom'
-import { Button, Input } from '../../../components'
-import { HiOutlineSearch } from 'react-icons/hi'
+import React from 'react';
+import cn from 'classnames';
+import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
+import { Button, Input } from '../../../components';
+import { HiOutlineSearch } from 'react-icons/hi';
 
 export interface IData {
   id: string
@@ -81,6 +81,8 @@ const StyledNavMenu = styled.div`
         text-align: left;
         background-color: transparent;
         border-color: transparent;
+        color: #4A5065;
+        
   
         &:hover {
           background-color: #EBEEF8;

@@ -1,12 +1,12 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Button } from '../../../components'
+import React from 'react';
+import styled from 'styled-components';
+import { Button } from '../../../components';
 import {
   HiOutlineCog,
   HiOutlineChatAlt2,
   HiOutlineUserCircle,
   HiOutlineClipboardCheck,
-} from 'react-icons/hi'
+} from 'react-icons/hi';
 
 const NavActions: React.FC = () => {
   return (

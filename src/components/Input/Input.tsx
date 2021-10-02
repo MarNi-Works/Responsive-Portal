@@ -1,8 +1,8 @@
-import React from 'react'
-import cn from 'classnames'
-import { IFieldProps } from './types'
-import Button from '../Button'
-import styled from 'styled-components'
+import React from 'react';
+import cn from 'classnames';
+import styled from 'styled-components';
+import { IFieldProps } from './types';
+import Button from '../Button';
 
 const Input: React.FC<IFieldProps> = props => {
   const {
@@ -21,30 +21,14 @@ const Input: React.FC<IFieldProps> = props => {
     ...defaultProps
   } = props
 
-  // const [isActive, setIsActive] = useState(false)
-  // const [isValue, setIsValue] = useState(value)
-
-  // const handleChange = (text: string) => {
-  //   setIsValue(text);
-
-  //   if (text !== '') {
-  //     setIsActive(true);
-  //   } else {
-  //     setIsActive(false);
-  //   }
-  // }
-
-
   return (
     <StyledInput className={cn('input', className)}>
       <input
         type={type}
         id={id}
         name={name}
-        // value={isValue}
         defaultValue={defaultValue}
         placeholder={placeholder}
-        // onChange={(e: any) => handleChange(e.target.value)}
         {...defaultProps}
       />
       <Button
@@ -65,12 +49,14 @@ const StyledInput = styled.div`
   .input__searchBtn {
     position: absolute;
     top: 0;
-    left: 0.5rem;
-    width: 40px;
-    height: 40px;
+    left: 0;
+    padding: 0 1rem;
+    color: #6E7384;
     border: transparent;
     background-color: transparent;
-    color: #6E7384;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   input {

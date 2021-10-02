@@ -1,8 +1,8 @@
-import React from 'react'
-import cn from 'classnames'
-import styled from 'styled-components'
-import { IStatisticsProps } from './types'
-import { Panel } from '../../../../components'
+import React from 'react';
+import cn from 'classnames';
+import styled from 'styled-components';
+import { IStatisticsProps } from './types';
+import { Panel } from '../../../../components';
 
 const Statistics: React.FC<IStatisticsProps> = (props) => {
   const { className, data } = props

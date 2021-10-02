@@ -1,7 +1,7 @@
-import React from 'react'
-import cn from 'classnames'
-import styled from 'styled-components'
-import { IPanelProps } from './types'
+import React from 'react';
+import cn from 'classnames';
+import styled from 'styled-components';
+import { IPanelProps } from './types';
 
 const Panel: React.FC<IPanelProps> = (props) => {
   const { className, children } = props
@@ -17,6 +17,7 @@ export default Panel;
 
 const StyledPanel = styled.div`
   flex: 1;
+  height: 100%;
   padding: 1rem;
   border-radius: 0.5rem;
   background-color: #FFFFFF;

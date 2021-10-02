@@ -1,19 +1,19 @@
-import React from 'react'
-import { INavProps } from './types'
-import { StyledNav } from '../../styled'
+import React from 'react';
+import { INavProps } from './types';
+import { StyledNav } from '../../styled';
 import {
   NavActions,
   NavHeader,
   NavMenu,
   NavProfile
-} from './components'
+} from './components';
 import {
   HiOutlineChartBar,
   HiOutlineChartPie,
   HiOutlineClipboardList,
   HiOutlineDocumentReport,
   HiOutlineUserGroup
-} from 'react-icons/hi'
+} from 'react-icons/hi';
 
 const menu_data = [
   {

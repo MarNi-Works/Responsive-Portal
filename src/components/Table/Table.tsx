@@ -1,8 +1,9 @@
-import React from 'react'
-import cn from 'classnames'
-import styled from 'styled-components'
-import { ITableProps } from './types'
-// import { HiStar } from 'react-icons/hi'
+import React from 'react';
+import cn from 'classnames';
+import styled from 'styled-components';
+import { ITableProps } from './types';
+import { HiOutlineUserCircle } from 'react-icons/hi';
+import Image from '../Image';
 
 const Table: React.FC<ITableProps> = (props) => {
   const { className, data, head } = props
@@ -19,23 +20,17 @@ const Table: React.FC<ITableProps> = (props) => {
         </thead>
         <tbody>
           {data.map((e: any) => {
-            // const starsImg = () => {
-            //   const stars5 = e.stars === '5'
-            //   const stars4 = e.stars === '4'
-            //   const stars3 = e.stars === '3'
-            //   const stars2 = e.stars === '2'
-            //   const stars1 = e.stars === '1'
-
-            //   // if (stars5 === true) {
-            //     for (var i=0; i < stars5; i++) {
-            //       <HiStar/>
-            //     }
-            //   // }
-            // }
             return (
               <tr key={e.id}>
                 <td>
-                  <div className='img'>{e.img}</div>
+                  <div className='img'>
+                    <Image
+                      semiRounded
+                      alt={`alt-img`}
+                      src={e.img}
+                      placeholder={<HiOutlineUserCircle />}
+                    />
+                  </div>
                 </td>
                 <td>
                   <div className='name'>

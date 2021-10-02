@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 type IconType =
   | string
@@ -11,6 +11,6 @@ export interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonEleme
   icon?: IconType;
   isLoading?: boolean;
   label?: string;
-  layout?: 'solid' | 'outline';
+  layout?: 'primary' | 'secondary';
   noBaseStyle?: boolean;
 }

@@ -7,25 +7,13 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  font-size: 16px;
 }
 
 body {
   color: #4A5065;
   font-weight: 400;
   font-family: "Inter", sans-serif;
-}
-
-.button {
-  cursor: pointer;
-  outline: none;
-  width: auto;
-  height: 40px;
-  padding: 0 1rem;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 4px;
-  color: #4A5065;
-  transition: all 0.2s ease;
 }
 
 svg {

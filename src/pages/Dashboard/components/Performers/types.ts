@@ -1,13 +1,22 @@
-import React from "react";
+import React from 'react';
 
-// export interface IData {
-//   id: string
-//   label: string
-//   icon: React.ReactElement | React.FC
-//   sales: string
-// }
+export interface IHeaderData {
+  id: string
+  header: string
+}
+
+export interface IBodyData {
+  id: string
+  name: string
+  img: string
+  rank: string
+  area: string
+  stars: any
+  points: string
+}
 
 export interface IPerformersProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
-  // data: IData[]
+  thead_data: IHeaderData[];
+  tbody_data: IBodyData[];
 }

@@ -1,6 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import { HiTemplate } from 'react-icons/hi'
+import React from 'react';
+import styled from 'styled-components';
+import { HiTemplate } from 'react-icons/hi';
 
 const NavHeader: React.FC = () => {
   return (
