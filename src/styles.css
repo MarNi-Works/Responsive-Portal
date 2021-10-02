@@ -46,6 +46,69 @@ svg {
   background-color: #6E7384;
 }
 
+/* ===== START: RESPONSIVE COLUMNS ===== */
+.col-span-12 {
+  flex: 0 0 auto !important;
+  width: 100%;
+  padding: 0.5rem;
+}
+.col-span-11 {
+  flex: 0 0 auto !important;
+  width: 91.666666663%;
+  padding: 0.5rem;
+}
+.col-span-10 {
+  flex: 0 0 auto !important;
+  width: 83.33333333%;
+  padding: 0.5rem;
+}
+.col-span-9 {
+  flex: 0 0 auto !important;
+  width: 75%;
+  padding: 0.5rem;
+}
+.col-span-8 {
+  flex: 0 0 auto !important;
+  width: 66.66666667%;
+  padding: 0.5rem;
+}
+.col-span-7 {
+  flex: 0 0 auto !important;
+  width: 58.333333331%;
+  padding: 0.5rem;
+}
+.col-span-6 {
+  flex: 0 0 auto !important;
+  width: 50%;
+  padding: 0.5rem;
+}
+.col-span-5 {
+  flex: 0 0 auto !important;
+  width: 41.666666665%;
+  padding: 0.5rem;
+}
+.col-span-4 {
+  flex: 0 0 auto !important;
+  width: 33.333333333%;
+  padding: 0.5rem;
+}
+.col-span-3 {
+  flex: 0 0 auto !important;
+  width: 25%;
+  padding: 0.5rem;
+}
+.col-span-2 {
+  flex: 0 0 auto !important;
+  width: 16.666666667%;
+  padding: 0.5rem;
+}
+.col-span-1 {
+  flex: 0 0 auto !important;
+  width: 8.333333333%;
+  padding: 0.5rem;
+}
+/* ====== END: RESPONSIVE COLUMNS ====== */
+
 
 /*
 ===== COLORS =====

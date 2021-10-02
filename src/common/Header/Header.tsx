@@ -1,7 +1,7 @@
 import React from 'react';
 import { IHeaderProps } from './types';
 import { StyledHeader } from '../../styled';
-import { Button } from '../../components';
+import { Button, Input } from '../../components';
 import {
   HiOutlineBell,
   HiOutlineGlobe,
@@ -20,11 +20,13 @@ const Header: React.FC<IHeaderProps> = () => {
         onClick={() => {}}
       />
       <div className='header__actions'>
-        <Button
-          noBaseStyle
-          className='toggle-nav'
+        <Input
+          type='text'
+          id='global-search'
           icon={<HiOutlineSearch />}
-          onClick={() => {}}
+          name='search'
+          placeholder='Search...'
+          defaultValue=''
         />
         <Button
           noBaseStyle

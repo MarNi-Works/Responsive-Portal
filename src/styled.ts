@@ -9,7 +9,15 @@ export const StyledLayout = styled.div`
   .Layout__Container {
     width: 100%;
     height: 100%;
+    min-height: 100%;
     padding-left: 256px;
+    overflow: hidden auto;
+
+    main {
+      width: 100%;
+      height: auto;
+      padding: 0.5rem;
+    }
   }
 `;
 
@@ -24,7 +32,8 @@ export const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
+  background-color: #FFFFFF;
+  box-shadow: 0 5px 15px -10px rgb(0 0 0 / 10%);
 
   &.header {
     .toggle-nav {
@@ -61,4 +70,5 @@ export const StyledNav = styled.nav`
   height: 100%;
   background-color: white;
   border-right: 1px solid #E5E9F5;
+  box-shadow: 0 5px 15px -10px rgb(0 0 0 / 10%);
 `;

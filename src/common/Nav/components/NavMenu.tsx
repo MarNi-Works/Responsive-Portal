@@ -1,13 +1,14 @@
 import React from 'react'
 import cn from 'classnames'
 import styled from 'styled-components'
+import { NavLink } from 'react-router-dom'
 import { Button, Input } from '../../../components'
 import { HiOutlineChartPie, HiOutlineSearch } from 'react-icons/hi'
 
 export interface IData {
   id: string
   label: string
-  selected: boolean
+  link: string
 }
 
 export interface INavMenuProps {
@@ -20,7 +21,7 @@ const NavMenu: React.FC<INavMenuProps> = ({ menus }) => {
       <div className='nav__search'>
         <Input
           type='text'
-          id='search'
+          id='search-menu'
           icon={<HiOutlineSearch />}
           name='search'
           placeholder='Search...'
@@ -31,11 +32,13 @@ const NavMenu: React.FC<INavMenuProps> = ({ menus }) => {
       <ul className='nav__menu'>
         {menus.map((e: any) => (
           <li key={e.id} className='nav__menu__list'>
-            <Button
-              className={cn('nav__menu__btn', { 'selected': e.selected })}
-              icon={<HiOutlineChartPie />}
-              label={e.label}
-            />
+            <NavLink to={e.link} activeClassName='active'>
+              <Button
+                className={cn('nav__menu__btn')}
+                icon={e.icon}
+                label={e.label}
+              />
+            </NavLink>
           </li>
         ))}
       </ul>
@@ -68,8 +71,6 @@ const StyledNavMenu = styled.div`
         display: flex;
         align-items: center;
         flex: 1;
-        height: 40px;
-        min-height: 40px;
       }
       
       .nav__menu__btn {
@@ -81,16 +82,33 @@ const StyledNavMenu = styled.div`
         background-color: transparent;
         border-color: transparent;
   
-        &.selected {
-          background-color: #EBEEF8;
-          border-color: #EBEEF8;
-          color: #3E59B7;
-        }
-  
         &:hover {
           background-color: #EBEEF8;
           border-color: #EBEEF8;
           color: #3B4051;
+        }
+      }
+
+      a {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        height: 40px;
+        min-height: 40px;
+        text-decoration: none;
+
+        &.active {
+          .nav__menu__btn {
+            background-color: #EBEEF8;
+            border-color: #EBEEF8;
+            color: #3E59B7;
+
+            &:hover {
+              background-color: #EBEEF8;
+              border-color: #EBEEF8;
+              color: #3B4051;
+            }
+          }
         }
       }
     }

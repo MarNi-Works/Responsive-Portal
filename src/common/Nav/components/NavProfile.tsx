@@ -36,7 +36,8 @@ const StyledNavProfile = styled.div`
     gap: 0.5rem;
     min-height: 6rem;
     padding: 1rem;
-    background-color: rgb(235 238 248 / 40%);
+    background-color: #FFFFFF;
+    border: 1px solid rgb(235 238 248 / 40%);
 
     .nav__profile__img {
       flex: 1;
