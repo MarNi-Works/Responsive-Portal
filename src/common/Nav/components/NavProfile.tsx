@@ -62,6 +62,7 @@ const StyledNavProfile = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
+      min-width: 40px;
       color: #6E7384;
       padding: 0.25rem;
       background-color: transparent;
